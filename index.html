@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Home Town - Xiangyang</title>
+<link rel = "stylesheet" href = "style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+<header class="site-header">
+    <h1>My Home Town - Xiangyang</h1>
+    <p> Food and Historical Attractions </p>
+  </header>
+<main>
+
+
+  <section>
+  <h2>Introduction</h2>
+      <div class="content-row">
+        <div class="text">
+    <p>
+        Xiangyang is a historic city located in Hubei Province,
+        China. With a history of more than two thousand years,
+        Xiangyang is famous for its ancient culture, beautiful
+        scenery, and delicious local food. 
+    </p>
+
+    <p>
+The city played an important role in Chinese history and is particularly
+        well known for stories from the Three Kingdoms period.
+        Today, Xiangyang attracts visitors from around the
+        world who come to experience its historical sites,
+        traditional culture, and unique cuisine.
+    </p>
+    </div>
+   <img src="Hometown_image/Xiangyang.png" alt="A photo of Xiangyang" class="content-image">
+    </div>
+</div>
+    <div id="introMap"></div>
+
+    <div class="button-group">
+        <button id="xiangyangBtn">Xiangyang</button>
+        <button id="uscBtn">USC</button>
+    </div>
+
+    <p id="mapMessage">
+        Click a button to view a location.
+    </p>
+</section>
+
+
+<section>
+    <h4>Local Food</h4>
+
+    <div class="content-row">
+        <div class="text">
+            <h3>Xiangyang Beef Noodles</h3>
+
+            <p>
+                Xiangyang Beef Noodles are one of the most popular
+                breakfast dishes in Xiangyang. The noodles are served
+                in a rich beef broth with spicy seasonings and tender
+                beef pieces. They are loved by both local residents
+                and tourists.
+            </p>
+        </div>
+
+        <img src="Hometown_image/Beef Noodles.png" alt="A photo of Xiangyang Beef Noodles" class="content-image">
+    </div>
+
+    <div class="content-row">
+        <div class="text">
+            <h3>Xiangyang Brown Sugar Flatbread</h3>
+
+            <p>
+                Xiangyang Brown Sugar Flatbread is a traditional
+                local snack. It has a soft texture and a sweet flavor
+                from brown sugar. Many visitors enjoy it as a dessert
+                or afternoon snack.
+            </p>
+        </div>
+
+        <img src="Hometown_image/Xiangyang Brown Sugar Flatbread.png" alt="A photo of Xiangyang Brown Sugar Flatbread" class="content-image">
+    </div>
+
+    <div class="content-row">
+        <div class="text">
+            <h3>Xiangyang Kongming Pickles</h3>
+
+            <p>
+                Kongming Pickles are a famous vegetable dish associated
+                with Zhuge Liang, also known as Kongming. They are an
+                important part of Xiangyang's food culture and are often
+                served in local restaurants.
+            </p>
+        </div>
+
+        <img src="Hometown_image/Xiangyang Kongming Pickles.png" alt="A photo of Xiangyang Kongming Pickles" class="content-image">
+    </div>
+<table class="food-table">
+<tr>
+<th>Food</th>
+<th>Price (RMB)</th>
+</tr>
+<tr>
+<td>Xiangyang Beef Noodles</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Brown Sugar Cake</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Kongming Dish</td>
+<td>20</td>
+</tr>
+</table>
+</section>
+
+
+<section>
+<h2>Historical Attractions</h2>
+<div class="content-row">
+ <div class="text">
+<h3>Gulongzhong</h3>
+<p>
+Gulongzhong is one of the most famous historical
+attractions in Xiangyang. It was the residence of Zhuge
+Liang before he became a military strategist during the
+Three Kingdoms period.
+</p>
+</div>
+<img src = "Hometown_image/Gulongzhong Scenic Area.png" alt = "A photo of Gulongzhong" class="content-image">
+</div>
+<div class="content-row">
+ <div class="text">
+<h3>Tangcheng</h3>
+<p>
+Tangcheng is a large cultural and tourism area built in
+the style of the Tang Dynasty. It is also a popular
+filming location for historical television dramas and
+movies.
+</p>
+</div>
+<img src = "Hometown_image/Xiangyang Tang City.png" alt = "A photo of Tangcheng" class="content-image">
+</div>
+<div class="content-row">
+ <div class="text">
+<h3>Zhaomingtai</h3>
+<p>
+Zhaomingtai is an important cultural landmark in
+Xiangyang. The site has a long history and is closely
+connected with Chinese literature and local culture.
+</p>
+</div>
+<img src = "Hometown_image/Zhaoming Terrace.png" alt = "A photo of Zhaomingtai" class="content-image">
+</div>
+</section>
+
+
+<section>
+<h2>Attraction Map</h2>
+<div id="map"></div>
+
+<div class="button-group">
+    <button id="gulongzhongBtn">The picture of Gulongzhong</button>
+    <button id="tangchengBtn">The picture of Tangcheng</button>
+    <button id="zhaomingtaiBtn">The picture of Zhaomingtai</button>
+</div>
+    <p id="status">Click a button and watch the map move.</p>
+</section>
+</main>
+<footer>
+<p>Built on 18 September 2026.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
